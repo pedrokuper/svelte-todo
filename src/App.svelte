@@ -3,14 +3,13 @@
   let todos = [];
   let task = "";
   let timer;
-  $: console.log(todos);
+
   function handleTodos(e) {
     const { value } = e.target;
     //Debouncer
     clearTimeout(timer);
     timer = setTimeout(() => {
       task = value;
-      console.log(task);
     }, 500);
   }
 

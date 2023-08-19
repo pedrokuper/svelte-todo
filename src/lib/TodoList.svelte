@@ -1,9 +1,7 @@
 <script>
+  import { createEventDispatcher } from "svelte";
   import Todo from "./Todo.svelte";
   export let todos;
-
-  import { createEventDispatcher } from "svelte";
-
   const dispatch = createEventDispatcher();
 
   function forward(event) {

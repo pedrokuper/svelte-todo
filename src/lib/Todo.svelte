@@ -1,8 +1,8 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  export let todo;
   const dispatch = createEventDispatcher();
   //PROPS
-  export let todo;
 
   function handleComplete(e, id) {
     dispatch("complete", {
